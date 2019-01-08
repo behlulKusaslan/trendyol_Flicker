@@ -12,6 +12,8 @@ final class FlickerView: UIView {
     
     // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     // Variables
     weak var delegate: FlickerViewDelegate?
@@ -27,6 +29,12 @@ final class FlickerView: UIView {
 
 // MARK: - FlickerViewProtocol
 extension FlickerView: FlickerViewProtocol {
+    func setError(_ isError: Bool) {
+        loadingActivityIndicator.isHidden = isError
+        collectionView.isHidden = isError
+        errorLabel.isHidden = !isError
+    }
+    
     func updateCollectionView(_ flickerPresentation: [FlickerViewPresentation]) {
         connectCollectionViewCellNib()
         self.flickerFeeds = flickerPresentation
@@ -35,6 +43,10 @@ extension FlickerView: FlickerViewProtocol {
     
     func setLoading(_ isLoading: Bool) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+        loadingActivityIndicator.isHidden = !isLoading
+        collectionView.isHidden = isLoading
+        errorLabel.isHidden = isLoading
+        isLoading ? loadingActivityIndicator.startAnimating() : loadingActivityIndicator.stopAnimating()
     }
 }
 
@@ -62,7 +74,8 @@ extension FlickerView: UICollectionViewDelegateFlowLayout {
         let numberOfColumns: CGFloat = 2
         
         let cellWidth = ((self.frame.width) - (numberOfColumns - 1)) / numberOfColumns
-        return CGSize(width: cellWidth, height: cellWidth)
+        let cellHeight: CGFloat = 300
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

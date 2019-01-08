@@ -18,7 +18,7 @@ final class FlickerDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        debugPrint(flickerViewPresentation.postImagePath)
+        title = flickerViewPresentation.profileName
         flickerDetailView.updateView(with: flickerViewPresentation)
     }
     
