@@ -12,7 +12,7 @@ import Kingfisher
 class FlickerFeedCollectionViewCell: UICollectionViewCell {
     
     // Outlets
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: CircleImageView!
     @IBOutlet weak var postImageView: UIImageView!
     @IBOutlet weak var profilNameLabel: UILabel!
     @IBOutlet weak var postDescriptionLabel: UILabel!
