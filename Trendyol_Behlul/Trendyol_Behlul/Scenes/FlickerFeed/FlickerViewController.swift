@@ -36,7 +36,7 @@ final class FlickerViewController: UIViewController {
                 flickerView.setLoading(false)
                 flickerView.updateCollectionView(feedObjects)
             case .error:
-                flickerView.setLoading(false)
+                flickerView.setError(true)
             }
         }
     }
@@ -64,6 +64,7 @@ final class FlickerViewController: UIViewController {
                 }
             case .failure(let error):
                 debugPrint(error.localizedDescription)
+                strongSelf.state = .error
             }
         }
     }
@@ -77,6 +78,7 @@ final class FlickerViewController: UIViewController {
                 strongSelf.persons.append(value.person)
             case .failure(let error):
                 debugPrint(error.localizedDescription)
+                // there might be no image but there is no need to chage state to .error
             }
         }
     }

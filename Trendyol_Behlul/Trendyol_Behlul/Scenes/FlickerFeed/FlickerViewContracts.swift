@@ -12,7 +12,7 @@ protocol FlickerViewProtocol {
     var delegate: FlickerViewDelegate? { get set }
     func updateCollectionView(_ flickerPresentation: [FlickerViewPresentation])
     func setLoading(_ isLoading: Bool)
-    func showError()
+    func setError(_ isError: Bool)
 }
 
 protocol FlickerViewDelegate: class {

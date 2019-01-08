@@ -13,6 +13,7 @@ final class FlickerView: UIView {
     // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     // Variables
     weak var delegate: FlickerViewDelegate?
@@ -28,8 +29,10 @@ final class FlickerView: UIView {
 
 // MARK: - FlickerViewProtocol
 extension FlickerView: FlickerViewProtocol {
-    func showError() {
-        // TODO: implement
+    func setError(_ isError: Bool) {
+        loadingActivityIndicator.isHidden = isError
+        collectionView.isHidden = isError
+        errorLabel.isHidden = !isError
     }
     
     func updateCollectionView(_ flickerPresentation: [FlickerViewPresentation]) {
@@ -42,6 +45,7 @@ extension FlickerView: FlickerViewProtocol {
         UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         loadingActivityIndicator.isHidden = !isLoading
         collectionView.isHidden = isLoading
+        errorLabel.isHidden = isLoading
         isLoading ? loadingActivityIndicator.startAnimating() : loadingActivityIndicator.stopAnimating()
     }
 }
