@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol FlickerViewProtocol {
+    var delegate: FlickerViewDelegate? { get set }
+    func updateCollectionView(_ flickerPresentation: [FlickerViewPresentation])
+    func setLoading(_ isLoading: Bool)
+}
+
+protocol FlickerViewDelegate: class {
+    func didCellSelected(at: Int)
+}

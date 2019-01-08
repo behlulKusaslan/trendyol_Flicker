@@ -21,6 +21,10 @@ final class FlickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        flickerView.delegate = self
+        // TODO: fetch data from service and pass into view
+        
+        // TODO: Test purposes remove from here
         service.getRecentPosts { (result) in
             switch result {
             case .success(let value):
@@ -41,4 +45,11 @@ final class FlickerViewController: UIViewController {
         
     }
     
+}
+
+extension FlickerViewController: FlickerViewDelegate {
+    func didCellSelected(at: Int) {
+        print(at)
+        // TODO: Go to detail view with object
+    }
 }
