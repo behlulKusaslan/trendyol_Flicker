@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class FlickerDetailView: UIView {
     
@@ -18,7 +19,7 @@ final class FlickerDetailView: UIView {
     
     // Functions
     private func setViewComponents() {
-        
+        postImageView.kf.setImage(with: flickerViewPresentation?.postImagePath)
     }
 }
 
@@ -26,5 +27,6 @@ final class FlickerDetailView: UIView {
 extension FlickerDetailView: FlickerDetailViewProtocol {
     func updateView(with flickerViewPresentation: FlickerViewPresentation) {
         self.flickerViewPresentation = flickerViewPresentation
+        setViewComponents()
     }
 }

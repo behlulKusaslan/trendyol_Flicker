@@ -14,7 +14,6 @@ final public class FlickerDetailViewBuilder {
         let storyboard = UIStoryboard(name: "Flicker", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "FlickerDetailViewController") as! FlickerDetailViewController
         viewController.flickerViewPresentation = flickerViewPresentation
-        viewController.service = app.service
         return viewController
     }
     

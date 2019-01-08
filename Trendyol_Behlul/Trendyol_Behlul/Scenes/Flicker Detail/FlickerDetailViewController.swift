@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import NetworkAPI
 
 final class FlickerDetailViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var flickerDetailView: FlickerDetailView!
-    var service: ServiceProtocol!
     var flickerViewPresentation: FlickerViewPresentation!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        debugPrint(flickerViewPresentation.postImagePath)
+        flickerDetailView.updateView(with: flickerViewPresentation)
     }
     
 }
