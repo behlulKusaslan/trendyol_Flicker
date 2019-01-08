@@ -1,5 +1,5 @@
 //
-//  TopResponse.swift
+//  TopUserResponse.swift
 //  NetworkAPI
 //
 //  Created by behlul on 8.01.2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct TopPhotosResponse: Decodable {
-    public let photos: Photos
+public struct TopUserResponse: Decodable {
+    public let person: Person
     public let stat: String
 }

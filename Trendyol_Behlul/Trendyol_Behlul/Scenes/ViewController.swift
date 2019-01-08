@@ -27,6 +27,16 @@ class ViewController: UIViewController {
                 debugPrint(error.localizedDescription)
             }
         }
+        
+        service.getUserInfo(userId: "161523614@N06") { (result) in
+            switch result {
+            case .success(let value):
+                debugPrint(value)
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+        
     }
 
 

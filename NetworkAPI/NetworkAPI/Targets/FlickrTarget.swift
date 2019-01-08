@@ -11,7 +11,7 @@ import Moya
 
 public enum FlickrTarget {
     case getRecentPhotos
-    case getUser
+    case getUser(userId: String)
 }
 
 extension FlickrTarget: TargetType {
@@ -48,9 +48,15 @@ extension FlickrTarget: TargetType {
                 "nojsoncallback" : 1
             ]
             return .requestParameters(parameters: params, encoding: URLEncoding(destination: .queryString))
-        case .getUser:
-            // TODO: implement
-            return .requestPlain
+        case .getUser(let userId):
+            let params: [String : Any] = [
+                "method" : "flickr.people.getInfo",
+                "api_key" : "b067d3d3ad3df443b1ae64fa27794d8f",
+                "user_id" : userId,
+                "format" : "json",
+                "nojsoncallback" : 1
+            ]
+            return .requestParameters(parameters: params, encoding: URLEncoding(destination: .queryString))
         }
     }
     

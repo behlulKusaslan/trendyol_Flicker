@@ -12,6 +12,7 @@ import Moya
 public protocol ServiceProtocol {
     func testService()
     func getRecentPosts(completion: @escaping (Result<TopPhotosResponse>) -> Void)
+    func getUserInfo(userId: String, completion: @escaping (Result<TopUserResponse>) -> Void)
 }
 
 public final class Service: ServiceProtocol {
@@ -28,13 +29,30 @@ public final class Service: ServiceProtocol {
     
     public func getRecentPosts(completion: @escaping (Result<TopPhotosResponse>) -> Void) {
         flickrProvider.request(.getRecentPhotos) { (result) in
-            
             switch result {
             case .success(let value):
                 do {
                     debugPrint(try value.mapJSON())
                     let decoder = JSONDecoder()
                     let response = try decoder.decode(TopPhotosResponse.self, from: value.data)
+                    completion(Result.success(response))
+                } catch {
+                    completion(Result.failure(Error.serilizationError(internal: error)))
+                }
+            case .failure(let error):
+                completion(Result.failure(Error.networkError(internal: error)))
+            }
+        }
+    }
+    
+    public func getUserInfo(userId: String, completion: @escaping (Result<TopUserResponse>) -> Void) {
+        flickrProvider.request(.getUser(userId: userId)) { (result) in
+            switch result {
+            case .success(let value):
+                do {
+                    debugPrint(try value.mapJSON())
+                    let decoder = JSONDecoder()
+                    let response = try decoder.decode(TopUserResponse.self, from: value.data)
                     completion(Result.success(response))
                 } catch {
                     completion(Result.failure(Error.serilizationError(internal: error)))
