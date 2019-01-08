@@ -18,6 +18,15 @@ class ViewController: UIViewController {
         
         service = Service()
         service.testService()
+        
+        service.getRecentPosts { (result) in
+            switch result {
+            case .success(let value):
+                debugPrint(value)
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
     }
 
 
