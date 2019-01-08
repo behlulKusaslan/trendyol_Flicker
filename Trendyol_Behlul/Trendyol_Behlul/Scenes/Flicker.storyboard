@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="oem-0d-GGG">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kog-VD-vBg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,11 +51,14 @@
                             <constraint firstItem="kog-VD-vBg" firstAttribute="top" secondItem="U8z-uf-gxl" secondAttribute="top" id="9bt-5w-mvZ"/>
                             <constraint firstItem="6HV-VU-Whr" firstAttribute="bottom" secondItem="kog-VD-vBg" secondAttribute="bottom" id="EW4-QM-VOV"/>
                             <constraint firstItem="6HV-VU-Whr" firstAttribute="trailing" secondItem="kog-VD-vBg" secondAttribute="trailing" id="OiG-DI-38B"/>
+                            <constraint firstItem="oem-0d-GGG" firstAttribute="centerY" secondItem="U8z-uf-gxl" secondAttribute="centerY" id="PAn-GW-lUg"/>
                             <constraint firstItem="kog-VD-vBg" firstAttribute="leading" secondItem="6HV-VU-Whr" secondAttribute="leading" id="PWX-r9-Wzl"/>
+                            <constraint firstItem="oem-0d-GGG" firstAttribute="centerX" secondItem="U8z-uf-gxl" secondAttribute="centerX" id="YhV-oe-7hm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6HV-VU-Whr"/>
                         <connections>
                             <outlet property="collectionView" destination="kog-VD-vBg" id="a6m-T2-wdG"/>
+                            <outlet property="loadingActivityIndicator" destination="oem-0d-GGG" id="sEO-IY-pS7"/>
                         </connections>
                     </view>
                     <connections>

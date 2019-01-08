@@ -12,6 +12,7 @@ final class FlickerView: UIView {
     
     // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
     
     // Variables
     weak var delegate: FlickerViewDelegate?
@@ -27,6 +28,10 @@ final class FlickerView: UIView {
 
 // MARK: - FlickerViewProtocol
 extension FlickerView: FlickerViewProtocol {
+    func showError() {
+        // TODO: implement
+    }
+    
     func updateCollectionView(_ flickerPresentation: [FlickerViewPresentation]) {
         connectCollectionViewCellNib()
         self.flickerFeeds = flickerPresentation
@@ -35,6 +40,9 @@ extension FlickerView: FlickerViewProtocol {
     
     func setLoading(_ isLoading: Bool) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+        loadingActivityIndicator.isHidden = !isLoading
+        collectionView.isHidden = isLoading
+        isLoading ? loadingActivityIndicator.startAnimating() : loadingActivityIndicator.stopAnimating()
     }
 }
 
