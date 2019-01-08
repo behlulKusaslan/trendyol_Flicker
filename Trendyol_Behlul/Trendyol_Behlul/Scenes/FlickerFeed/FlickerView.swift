@@ -74,7 +74,8 @@ extension FlickerView: UICollectionViewDelegateFlowLayout {
         let numberOfColumns: CGFloat = 2
         
         let cellWidth = ((self.frame.width) - (numberOfColumns - 1)) / numberOfColumns
-        return CGSize(width: cellWidth, height: cellWidth)
+        let cellHeight: CGFloat = 300
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
