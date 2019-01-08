@@ -45,6 +45,7 @@ final class FlickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Flickr Feed"
         state = .loading
         flickerView.delegate = self
         fetcFeed()
