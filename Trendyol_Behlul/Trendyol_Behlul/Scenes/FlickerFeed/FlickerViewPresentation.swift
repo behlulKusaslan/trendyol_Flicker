@@ -11,16 +11,16 @@ import struct NetworkAPI.Photo
 import struct NetworkAPI.Person
 
 struct FlickerViewPresentation {
-    let profileImagePath: String
-    let postImagePath: String
+    let profileImagePath: URL
+    let postImagePath: URL
     let profileName: String
     let postDescription: String
 }
 
 extension FlickerViewPresentation {
     init(photo: Photo, person: Person) {
-        let profileImagePath = "http://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret).jpg"
-        let postImagePath = "http://farm\(person.iconfarm).staticflickr.com/\(person.iconserver)/buddyicons/\(person.nsid).jpg"
+        let postImagePath = URL(string: "http://farm\(photo.farm).staticflickr.com/\(photo.server)/\(photo.id)_\(photo.secret).jpg")!
+        let profileImagePath = URL(string: "http://farm\(person.iconfarm).staticflickr.com/\(person.iconserver)/buddyicons/\(person.nsid).jpg")!
         
         self.init(profileImagePath: profileImagePath, postImagePath: postImagePath, profileName: person.username.content, postDescription: photo.title)
     }

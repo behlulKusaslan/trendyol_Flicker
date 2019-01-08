@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FlickerFeedCollectionViewCell: UICollectionViewCell {
     
@@ -33,7 +34,8 @@ class FlickerFeedCollectionViewCell: UICollectionViewCell {
     
     // Functions
     func configureCell(with flickerViewPresentation: FlickerViewPresentation) {
-        // TODO: implement Kingfisher.
+        profileImageView.kf.setImage(with: flickerViewPresentation.profileImagePath)
+        postImageView.kf.setImage(with: flickerViewPresentation.postImagePath)
         profilNameLabel.text = flickerViewPresentation.profileName
         postDescriptionLabel.text = flickerViewPresentation.postDescription
     }
