@@ -24,6 +24,8 @@
 		4F87FF4421E4E12F006D443D /* FlickerFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */; };
 		4F87FF4621E4E39B006D443D /* FlickerViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4521E4E39B006D443D /* FlickerViewPresentation.swift */; };
 		4F87FF4821E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */; };
+		4F87FF4F21E4F07C006D443D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF4E21E4F07C006D443D /* Kingfisher.framework */; };
+		4F87FF5321E4F30B006D443D /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5221E4F30B006D443D /* CircleImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickerFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		4F87FF4521E4E39B006D443D /* FlickerViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerViewPresentation.swift; sourceTree = "<group>"; };
 		4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerFeedCollectionViewCellBuilder.swift; sourceTree = "<group>"; };
+		4F87FF4E21E4F07C006D443D /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = ../Vendor/Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		4F87FF5221E4F30B006D443D /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F87FF4F21E4F07C006D443D /* Kingfisher.framework in Frameworks */,
 				4F87FF0921E4B1B3006D443D /* NetworkAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +124,7 @@
 				4F87FEB021E4AE75006D443D /* Trendyol_Behlul */,
 				4F87FEC521E4AE76006D443D /* Trendyol_BehlulTests */,
 				4F87FEFB21E4AF54006D443D /* Vendor */,
+				4F87FF4C21E4F043006D443D /* Farmeworks */,
 				4F87FEAF21E4AE75006D443D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,6 +143,7 @@
 			children = (
 				4F87FEF721E4AEE9006D443D /* App */,
 				4F87FEFA21E4AF34006D443D /* Scenes */,
+				4F87FF5121E4F2EF006D443D /* Custom Views */,
 				4F87FEF921E4AF22006D443D /* Resources */,
 				4F87FEF821E4AF07006D443D /* Supporting Files */,
 			);
@@ -226,6 +233,22 @@
 				4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4F87FF4C21E4F043006D443D /* Farmeworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF4E21E4F07C006D443D /* Kingfisher.framework */,
+			);
+			name = Farmeworks;
+			sourceTree = "<group>";
+		};
+		4F87FF5121E4F2EF006D443D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF5221E4F30B006D443D /* CircleImageView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +386,7 @@
 				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = "Copy Frameworks (Carthage)";
 			outputFileListPaths = (
@@ -371,6 +395,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -389,6 +414,7 @@
 				4F87FF4821E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift in Sources */,
 				4F87FF3521E4DD90006D443D /* FlickerViewController.swift in Sources */,
 				4F87FF3921E4DDAA006D443D /* FlickerViewContracts.swift in Sources */,
+				4F87FF5321E4F30B006D443D /* CircleImageView.swift in Sources */,
 				4F87FF3D21E4DF65006D443D /* AppRouter.swift in Sources */,
 				4F87FF4621E4E39B006D443D /* FlickerViewPresentation.swift in Sources */,
 				4F87FF3321E4DD86006D443D /* FlickerView.swift in Sources */,
@@ -554,6 +580,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3D9MG5RU;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/iOS/";
 				INFOPLIST_FILE = "$(SRCROOT)/Trendyol_Behlul/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,6 +600,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BW3D9MG5RU;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/iOS/";
 				INFOPLIST_FILE = "$(SRCROOT)/Trendyol_Behlul/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
