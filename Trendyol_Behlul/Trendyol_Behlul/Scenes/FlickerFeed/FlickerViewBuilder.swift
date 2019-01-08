@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import NetworkAPI
 
 final public class FlickerViewBuilder {
     
     static func make() -> FlickerViewController {
         let storyboard = UIStoryboard(name: "Flicker", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "FlickerViewController") as! FlickerViewController
-        viewController.service = Service()
+        viewController.service = app.service
         return viewController
     }
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NetworkAPI
 
 final class FlickerViewController: UIViewController {
     
@@ -19,6 +20,24 @@ final class FlickerViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        service.getRecentPosts { (result) in
+            switch result {
+            case .success(let value):
+                debugPrint(value)
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
+        
+        service.getUserInfo(userId: "161523614@N06") { (result) in
+            switch result {
+            case .success(let value):
+                debugPrint(value)
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
+            }
+        }
         
     }
     
