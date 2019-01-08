@@ -1,0 +1,2 @@
+github "Moya/Moya"
+github "onevcat/Kingfisher" ~> 5.0

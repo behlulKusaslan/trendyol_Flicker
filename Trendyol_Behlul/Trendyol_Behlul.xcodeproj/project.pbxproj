@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F87FEB221E4AE75006D443D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEB121E4AE75006D443D /* AppDelegate.swift */; };
+		4F87FEB421E4AE75006D443D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEB321E4AE75006D443D /* ViewController.swift */; };
+		4F87FEB721E4AE75006D443D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEB521E4AE75006D443D /* Main.storyboard */; };
+		4F87FEB921E4AE76006D443D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEB821E4AE76006D443D /* Assets.xcassets */; };
+		4F87FEBC21E4AE76006D443D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEBA21E4AE76006D443D /* LaunchScreen.storyboard */; };
+		4F87FEC721E4AE76006D443D /* Trendyol_BehlulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEC621E4AE76006D443D /* Trendyol_BehlulTests.swift */; };
+		4F87FF0921E4B1B3006D443D /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF0621E4B19C006D443D /* NetworkAPI.framework */; };
+		4F87FF0A21E4B1B3006D443D /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF0621E4B19C006D443D /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F87FEC321E4AE76006D443D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F87FEA621E4AE75006D443D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F87FEAD21E4AE75006D443D;
+			remoteInfo = Trendyol_Behlul;
+		};
+		4F87FF0521E4B19C006D443D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F87FEDB21E4AE9A006D443D;
+			remoteInfo = NetworkAPI;
+		};
+		4F87FF0721E4B19C006D443D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4F87FEE421E4AE9A006D443D;
+			remoteInfo = NetworkAPITests;
+		};
+		4F87FF0B21E4B1B3006D443D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F87FEDA21E4AE9A006D443D;
+			remoteInfo = NetworkAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F87FF0D21E4B1B4006D443D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F87FF0A21E4B1B3006D443D /* NetworkAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F87FEAE21E4AE75006D443D /* Trendyol_Behlul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trendyol_Behlul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F87FEB121E4AE75006D443D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F87FEB321E4AE75006D443D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F87FEB621E4AE75006D443D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F87FEB821E4AE76006D443D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F87FEBB21E4AE76006D443D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F87FEBD21E4AE76006D443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F87FEC221E4AE76006D443D /* Trendyol_BehlulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Trendyol_BehlulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F87FEC621E4AE76006D443D /* Trendyol_BehlulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trendyol_BehlulTests.swift; sourceTree = "<group>"; };
+		4F87FEC821E4AE76006D443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkAPI.xcodeproj; path = ../NetworkAPI/NetworkAPI.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F87FEAB21E4AE75006D443D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F87FF0921E4B1B3006D443D /* NetworkAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F87FEBF21E4AE76006D443D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F87FEA521E4AE75006D443D = {
+			isa = PBXGroup;
+			children = (
+				4F87FEB021E4AE75006D443D /* Trendyol_Behlul */,
+				4F87FEC521E4AE76006D443D /* Trendyol_BehlulTests */,
+				4F87FEFB21E4AF54006D443D /* Vendor */,
+				4F87FEAF21E4AE75006D443D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F87FEAF21E4AE75006D443D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEAE21E4AE75006D443D /* Trendyol_Behlul.app */,
+				4F87FEC221E4AE76006D443D /* Trendyol_BehlulTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F87FEB021E4AE75006D443D /* Trendyol_Behlul */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEF721E4AEE9006D443D /* App */,
+				4F87FEFA21E4AF34006D443D /* Scenes */,
+				4F87FEF921E4AF22006D443D /* Resources */,
+				4F87FEF821E4AF07006D443D /* Supporting Files */,
+			);
+			path = Trendyol_Behlul;
+			sourceTree = "<group>";
+		};
+		4F87FEC521E4AE76006D443D /* Trendyol_BehlulTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEC621E4AE76006D443D /* Trendyol_BehlulTests.swift */,
+				4F87FEC821E4AE76006D443D /* Info.plist */,
+			);
+			path = Trendyol_BehlulTests;
+			sourceTree = "<group>";
+		};
+		4F87FEF721E4AEE9006D443D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEB121E4AE75006D443D /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4F87FEF821E4AF07006D443D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEBA21E4AE76006D443D /* LaunchScreen.storyboard */,
+				4F87FEBD21E4AE76006D443D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F87FEF921E4AF22006D443D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEB821E4AE76006D443D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F87FEFA21E4AF34006D443D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FEB321E4AE75006D443D /* ViewController.swift */,
+				4F87FEB521E4AE75006D443D /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4F87FEFB21E4AF54006D443D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		4F87FF0121E4B19C006D443D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF0621E4B19C006D443D /* NetworkAPI.framework */,
+				4F87FF0821E4B19C006D443D /* NetworkAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F87FEAD21E4AE75006D443D /* Trendyol_Behlul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F87FECB21E4AE76006D443D /* Build configuration list for PBXNativeTarget "Trendyol_Behlul" */;
+			buildPhases = (
+				4F87FEAA21E4AE75006D443D /* Sources */,
+				4F87FEAB21E4AE75006D443D /* Frameworks */,
+				4F87FEAC21E4AE75006D443D /* Resources */,
+				4F87FF0D21E4B1B4006D443D /* Embed Frameworks */,
+				4F87FF1521E4B644006D443D /* Copy Frameworks (Carthage) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F87FF0C21E4B1B3006D443D /* PBXTargetDependency */,
+			);
+			name = Trendyol_Behlul;
+			productName = Trendyol_Behlul;
+			productReference = 4F87FEAE21E4AE75006D443D /* Trendyol_Behlul.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F87FEC121E4AE76006D443D /* Trendyol_BehlulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F87FECE21E4AE76006D443D /* Build configuration list for PBXNativeTarget "Trendyol_BehlulTests" */;
+			buildPhases = (
+				4F87FEBE21E4AE76006D443D /* Sources */,
+				4F87FEBF21E4AE76006D443D /* Frameworks */,
+				4F87FEC021E4AE76006D443D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F87FEC421E4AE76006D443D /* PBXTargetDependency */,
+			);
+			name = Trendyol_BehlulTests;
+			productName = Trendyol_BehlulTests;
+			productReference = 4F87FEC221E4AE76006D443D /* Trendyol_BehlulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F87FEA621E4AE75006D443D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = behlul;
+				TargetAttributes = {
+					4F87FEAD21E4AE75006D443D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4F87FEC121E4AE76006D443D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4F87FEAD21E4AE75006D443D;
+					};
+				};
+			};
+			buildConfigurationList = 4F87FEA921E4AE75006D443D /* Build configuration list for PBXProject "Trendyol_Behlul" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F87FEA521E4AE75006D443D;
+			productRefGroup = 4F87FEAF21E4AE75006D443D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F87FF0121E4B19C006D443D /* Products */;
+					ProjectRef = 4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4F87FEAD21E4AE75006D443D /* Trendyol_Behlul */,
+				4F87FEC121E4AE76006D443D /* Trendyol_BehlulTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F87FF0621E4B19C006D443D /* NetworkAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NetworkAPI.framework;
+			remoteRef = 4F87FF0521E4B19C006D443D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F87FF0821E4B19C006D443D /* NetworkAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkAPITests.xctest;
+			remoteRef = 4F87FF0721E4B19C006D443D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F87FEAC21E4AE75006D443D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F87FEBC21E4AE76006D443D /* LaunchScreen.storyboard in Resources */,
+				4F87FEB921E4AE76006D443D /* Assets.xcassets in Resources */,
+				4F87FEB721E4AE75006D443D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F87FEC021E4AE76006D443D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F87FF1521E4B644006D443D /* Copy Frameworks (Carthage) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/../Vendor/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Copy Frameworks (Carthage)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Moya.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F87FEAA21E4AE75006D443D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F87FEB421E4AE75006D443D /* ViewController.swift in Sources */,
+				4F87FEB221E4AE75006D443D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F87FEBE21E4AE76006D443D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F87FEC721E4AE76006D443D /* Trendyol_BehlulTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F87FEC421E4AE76006D443D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F87FEAD21E4AE75006D443D /* Trendyol_Behlul */;
+			targetProxy = 4F87FEC321E4AE76006D443D /* PBXContainerItemProxy */;
+		};
+		4F87FF0C21E4B1B3006D443D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetworkAPI;
+			targetProxy = 4F87FF0B21E4B1B3006D443D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4F87FEB521E4AE75006D443D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F87FEB621E4AE75006D443D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F87FEBA21E4AE76006D443D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F87FEBB21E4AE76006D443D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F87FEC921E4AE76006D443D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F87FECA21E4AE76006D443D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F87FECC21E4AE76006D443D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QZY3LQ388;
+				INFOPLIST_FILE = "$(SRCROOT)/Trendyol_Behlul/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.behlulkusaslan.Trendyol-Behlul";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F87FECD21E4AE76006D443D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QZY3LQ388;
+				INFOPLIST_FILE = "$(SRCROOT)/Trendyol_Behlul/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.behlulkusaslan.Trendyol-Behlul";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F87FECF21E4AE76006D443D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QZY3LQ388;
+				INFOPLIST_FILE = Trendyol_BehlulTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.behlulkusaslan.Trendyol-BehlulTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trendyol_Behlul.app/Trendyol_Behlul";
+			};
+			name = Debug;
+		};
+		4F87FED021E4AE76006D443D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6QZY3LQ388;
+				INFOPLIST_FILE = Trendyol_BehlulTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.behlulkusaslan.Trendyol-BehlulTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trendyol_Behlul.app/Trendyol_Behlul";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F87FEA921E4AE75006D443D /* Build configuration list for PBXProject "Trendyol_Behlul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F87FEC921E4AE76006D443D /* Debug */,
+				4F87FECA21E4AE76006D443D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F87FECB21E4AE76006D443D /* Build configuration list for PBXNativeTarget "Trendyol_Behlul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F87FECC21E4AE76006D443D /* Debug */,
+				4F87FECD21E4AE76006D443D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F87FECE21E4AE76006D443D /* Build configuration list for PBXNativeTarget "Trendyol_BehlulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F87FECF21E4AE76006D443D /* Debug */,
+				4F87FED021E4AE76006D443D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F87FEA621E4AE75006D443D /* Project object */;
+}
