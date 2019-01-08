@@ -63,5 +63,37 @@
             </objects>
             <point key="canvasLocation" x="-255" y="68"/>
         </scene>
+        <!--Flicker Detail View Controller-->
+        <scene sceneID="dAD-ao-eEv">
+            <objects>
+                <viewController storyboardIdentifier="FlickerDetailViewController" id="umg-n7-ytb" customClass="FlickerDetailViewController" customModule="Trendyol_Behlul" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B0a-2X-kt6" customClass="FlickerDetailView" customModule="Trendyol_Behlul" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9RE-dn-cyG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9RE-dn-cyG" secondAttribute="bottom" id="98q-cN-xpe"/>
+                            <constraint firstItem="9RE-dn-cyG" firstAttribute="leading" secondItem="HeM-M9-UXh" secondAttribute="leading" id="PWW-Bf-5Yl"/>
+                            <constraint firstItem="9RE-dn-cyG" firstAttribute="top" secondItem="B0a-2X-kt6" secondAttribute="top" id="cIt-ts-xWw"/>
+                            <constraint firstItem="HeM-M9-UXh" firstAttribute="trailing" secondItem="9RE-dn-cyG" secondAttribute="trailing" id="knQ-td-UjA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HeM-M9-UXh"/>
+                        <connections>
+                            <outlet property="postImageView" destination="9RE-dn-cyG" id="qNT-75-S8R"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="flickerDetailView" destination="B0a-2X-kt6" id="OSa-QB-UM3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrI-Yc-Dvy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="68"/>
+        </scene>
     </scenes>
 </document>

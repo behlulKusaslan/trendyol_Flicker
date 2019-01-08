@@ -45,11 +45,9 @@ final class FlickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        state = .loading
         flickerView.delegate = self
-        // TODO: fetch data from service and pass into view
         fetcFeed()
-        
     }
     
     // Functions
@@ -87,9 +85,15 @@ final class FlickerViewController: UIViewController {
 
 // MARK: - FlickerViewDelegate
 extension FlickerViewController: FlickerViewDelegate {
-    func didCellSelected(at: Int) {
-        print(at)
-        // TODO: Go to detail view with object
+    func didCellSelected(at index: Int) {
+        switch state {
+        case .ready(let feedObjects):
+            let presentationObject = feedObjects[index]
+            let detailViewController = FlickerDetailViewBuilder.make(with: presentationObject)
+            navigationController?.pushViewController(detailViewController, animated: true)
+        default:
+            print("We should not get here")
+        }
     }
 }
 
