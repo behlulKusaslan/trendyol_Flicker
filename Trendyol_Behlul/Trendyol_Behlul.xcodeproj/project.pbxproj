@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4F87FEB221E4AE75006D443D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEB121E4AE75006D443D /* AppDelegate.swift */; };
-		4F87FEB421E4AE75006D443D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEB321E4AE75006D443D /* ViewController.swift */; };
-		4F87FEB721E4AE75006D443D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEB521E4AE75006D443D /* Main.storyboard */; };
 		4F87FEB921E4AE76006D443D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEB821E4AE76006D443D /* Assets.xcassets */; };
 		4F87FEBC21E4AE76006D443D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FEBA21E4AE76006D443D /* LaunchScreen.storyboard */; };
 		4F87FEC721E4AE76006D443D /* Trendyol_BehlulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FEC621E4AE76006D443D /* Trendyol_BehlulTests.swift */; };
 		4F87FF0921E4B1B3006D443D /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF0621E4B19C006D443D /* NetworkAPI.framework */; };
 		4F87FF0A21E4B1B3006D443D /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF0621E4B19C006D443D /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F87FF3321E4DD86006D443D /* FlickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3221E4DD86006D443D /* FlickerView.swift */; };
+		4F87FF3521E4DD90006D443D /* FlickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3421E4DD90006D443D /* FlickerViewController.swift */; };
+		4F87FF3721E4DDA0006D443D /* FlickerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3621E4DDA0006D443D /* FlickerViewBuilder.swift */; };
+		4F87FF3921E4DDAA006D443D /* FlickerViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3821E4DDAA006D443D /* FlickerViewContracts.swift */; };
+		4F87FF3B21E4DE5D006D443D /* Flicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FF3A21E4DE5D006D443D /* Flicker.storyboard */; };
+		4F87FF3D21E4DF65006D443D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3C21E4DF65006D443D /* AppRouter.swift */; };
+		4F87FF3F21E4DF96006D443D /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF3E21E4DF96006D443D /* AppContainer.swift */; };
+		4F87FF4321E4E12F006D443D /* FlickerFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4121E4E12F006D443D /* FlickerFeedCollectionViewCell.swift */; };
+		4F87FF4421E4E12F006D443D /* FlickerFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */; };
+		4F87FF4621E4E39B006D443D /* FlickerViewPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4521E4E39B006D443D /* FlickerViewPresentation.swift */; };
+		4F87FF4821E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +74,6 @@
 /* Begin PBXFileReference section */
 		4F87FEAE21E4AE75006D443D /* Trendyol_Behlul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trendyol_Behlul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F87FEB121E4AE75006D443D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F87FEB321E4AE75006D443D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F87FEB621E4AE75006D443D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F87FEB821E4AE76006D443D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F87FEBB21E4AE76006D443D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F87FEBD21E4AE76006D443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +81,17 @@
 		4F87FEC621E4AE76006D443D /* Trendyol_BehlulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trendyol_BehlulTests.swift; sourceTree = "<group>"; };
 		4F87FEC821E4AE76006D443D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F87FF0021E4B19C006D443D /* NetworkAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NetworkAPI.xcodeproj; path = ../NetworkAPI/NetworkAPI.xcodeproj; sourceTree = "<group>"; };
+		4F87FF3221E4DD86006D443D /* FlickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerView.swift; sourceTree = "<group>"; };
+		4F87FF3421E4DD90006D443D /* FlickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerViewController.swift; sourceTree = "<group>"; };
+		4F87FF3621E4DDA0006D443D /* FlickerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerViewBuilder.swift; sourceTree = "<group>"; };
+		4F87FF3821E4DDAA006D443D /* FlickerViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerViewContracts.swift; sourceTree = "<group>"; };
+		4F87FF3A21E4DE5D006D443D /* Flicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Flicker.storyboard; sourceTree = "<group>"; };
+		4F87FF3C21E4DF65006D443D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		4F87FF3E21E4DF96006D443D /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		4F87FF4121E4E12F006D443D /* FlickerFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlickerFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		4F87FF4521E4E39B006D443D /* FlickerViewPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerViewPresentation.swift; sourceTree = "<group>"; };
+		4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerFeedCollectionViewCellBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				4F87FEB121E4AE75006D443D /* AppDelegate.swift */,
+				4F87FF3C21E4DF65006D443D /* AppRouter.swift */,
+				4F87FF3E21E4DF96006D443D /* AppContainer.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -162,8 +182,8 @@
 		4F87FEFA21E4AF34006D443D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				4F87FEB321E4AE75006D443D /* ViewController.swift */,
-				4F87FEB521E4AE75006D443D /* Main.storyboard */,
+				4F87FF3021E4DD69006D443D /* FlickerFeed */,
+				4F87FF3A21E4DE5D006D443D /* Flicker.storyboard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -183,6 +203,29 @@
 				4F87FF0821E4B19C006D443D /* NetworkAPITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4F87FF3021E4DD69006D443D /* FlickerFeed */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF4021E4E10B006D443D /* Cell */,
+				4F87FF3221E4DD86006D443D /* FlickerView.swift */,
+				4F87FF3421E4DD90006D443D /* FlickerViewController.swift */,
+				4F87FF3621E4DDA0006D443D /* FlickerViewBuilder.swift */,
+				4F87FF4521E4E39B006D443D /* FlickerViewPresentation.swift */,
+				4F87FF3821E4DDAA006D443D /* FlickerViewContracts.swift */,
+			);
+			path = FlickerFeed;
+			sourceTree = "<group>";
+		};
+		4F87FF4021E4E10B006D443D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */,
+				4F87FF4121E4E12F006D443D /* FlickerFeedCollectionViewCell.swift */,
+				4F87FF4221E4E12F006D443D /* FlickerFeedCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,8 +336,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F87FEBC21E4AE76006D443D /* LaunchScreen.storyboard in Resources */,
+				4F87FF3B21E4DE5D006D443D /* Flicker.storyboard in Resources */,
 				4F87FEB921E4AE76006D443D /* Assets.xcassets in Resources */,
-				4F87FEB721E4AE75006D443D /* Main.storyboard in Resources */,
+				4F87FF4421E4E12F006D443D /* FlickerFeedCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +383,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F87FEB421E4AE75006D443D /* ViewController.swift in Sources */,
+				4F87FF3721E4DDA0006D443D /* FlickerViewBuilder.swift in Sources */,
+				4F87FF4321E4E12F006D443D /* FlickerFeedCollectionViewCell.swift in Sources */,
+				4F87FF3F21E4DF96006D443D /* AppContainer.swift in Sources */,
+				4F87FF4821E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift in Sources */,
+				4F87FF3521E4DD90006D443D /* FlickerViewController.swift in Sources */,
+				4F87FF3921E4DDAA006D443D /* FlickerViewContracts.swift in Sources */,
+				4F87FF3D21E4DF65006D443D /* AppRouter.swift in Sources */,
+				4F87FF4621E4E39B006D443D /* FlickerViewPresentation.swift in Sources */,
+				4F87FF3321E4DD86006D443D /* FlickerView.swift in Sources */,
 				4F87FEB221E4AE75006D443D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,14 +420,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4F87FEB521E4AE75006D443D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F87FEB621E4AE75006D443D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4F87FEBA21E4AE76006D443D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
