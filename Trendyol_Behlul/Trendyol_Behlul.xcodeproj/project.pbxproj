@@ -26,6 +26,10 @@
 		4F87FF4821E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */; };
 		4F87FF4F21E4F07C006D443D /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F87FF4E21E4F07C006D443D /* Kingfisher.framework */; };
 		4F87FF5321E4F30B006D443D /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5221E4F30B006D443D /* CircleImageView.swift */; };
+		4F87FF5A21E4F4DC006D443D /* FlickerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5921E4F4DC006D443D /* FlickerDetailView.swift */; };
+		4F87FF5C21E4F517006D443D /* FlickerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5B21E4F517006D443D /* FlickerDetailViewController.swift */; };
+		4F87FF5E21E4F560006D443D /* FlickerDetailViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5D21E4F560006D443D /* FlickerDetailViewBuilder.swift */; };
+		4F87FF6021E4F628006D443D /* FlickerDetailViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F87FF5F21E4F628006D443D /* FlickerDetailViewContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		4F87FF4721E4E62E006D443D /* FlickerFeedCollectionViewCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerFeedCollectionViewCellBuilder.swift; sourceTree = "<group>"; };
 		4F87FF4E21E4F07C006D443D /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = ../Vendor/Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		4F87FF5221E4F30B006D443D /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		4F87FF5921E4F4DC006D443D /* FlickerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerDetailView.swift; sourceTree = "<group>"; };
+		4F87FF5B21E4F517006D443D /* FlickerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerDetailViewController.swift; sourceTree = "<group>"; };
+		4F87FF5D21E4F560006D443D /* FlickerDetailViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerDetailViewBuilder.swift; sourceTree = "<group>"; };
+		4F87FF5F21E4F628006D443D /* FlickerDetailViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickerDetailViewContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				4F87FF3021E4DD69006D443D /* FlickerFeed */,
+				4F87FF5821E4F4AD006D443D /* Flicker Detail */,
 				4F87FF3A21E4DE5D006D443D /* Flicker.storyboard */,
 			);
 			path = Scenes;
@@ -249,6 +258,17 @@
 				4F87FF5221E4F30B006D443D /* CircleImageView.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		4F87FF5821E4F4AD006D443D /* Flicker Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4F87FF5921E4F4DC006D443D /* FlickerDetailView.swift */,
+				4F87FF5B21E4F517006D443D /* FlickerDetailViewController.swift */,
+				4F87FF5D21E4F560006D443D /* FlickerDetailViewBuilder.swift */,
+				4F87FF5F21E4F628006D443D /* FlickerDetailViewContracts.swift */,
+			);
+			path = "Flicker Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +428,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F87FF6021E4F628006D443D /* FlickerDetailViewContracts.swift in Sources */,
+				4F87FF5E21E4F560006D443D /* FlickerDetailViewBuilder.swift in Sources */,
+				4F87FF5A21E4F4DC006D443D /* FlickerDetailView.swift in Sources */,
 				4F87FF3721E4DDA0006D443D /* FlickerViewBuilder.swift in Sources */,
 				4F87FF4321E4E12F006D443D /* FlickerFeedCollectionViewCell.swift in Sources */,
 				4F87FF3F21E4DF96006D443D /* AppContainer.swift in Sources */,
@@ -415,6 +438,7 @@
 				4F87FF3521E4DD90006D443D /* FlickerViewController.swift in Sources */,
 				4F87FF3921E4DDAA006D443D /* FlickerViewContracts.swift in Sources */,
 				4F87FF5321E4F30B006D443D /* CircleImageView.swift in Sources */,
+				4F87FF5C21E4F517006D443D /* FlickerDetailViewController.swift in Sources */,
 				4F87FF3D21E4DF65006D443D /* AppRouter.swift in Sources */,
 				4F87FF4621E4E39B006D443D /* FlickerViewPresentation.swift in Sources */,
 				4F87FF3321E4DD86006D443D /* FlickerView.swift in Sources */,

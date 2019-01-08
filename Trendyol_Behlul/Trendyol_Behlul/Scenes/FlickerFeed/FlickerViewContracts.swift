@@ -15,5 +15,5 @@ protocol FlickerViewProtocol {
 }
 
 protocol FlickerViewDelegate: class {
-    func didCellSelected(at: Int)
+    func didCellSelected(at index: Int)
 }
